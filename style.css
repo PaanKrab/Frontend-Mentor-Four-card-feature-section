@@ -1,0 +1,163 @@
+/* font-family: 'Poppins', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+.attribution { font-size: 11px; 
+    text-align: center; 
+    position: absolute; 
+    left: 50%; 
+    transform: translateX(-50%);
+}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F2F2F2;
+    font-family: 'Poppins', sans-serif;
+    color: #4D4F62;
+    min-height: 100vh;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-top: 35px;
+    width: 57px;
+}
+
+div.wrap
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1440px;
+    min-width: 375px;
+    background-color: #FAFAFA;
+}
+
+main div {
+    width: 311px;
+    height: 222px;
+    background-color: white;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 20px 15px rgb(235, 239, 246);
+}
+div.introduction {
+    margin-top: 50px;
+    text-align: center;
+    max-width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.introduction p {
+    padding: 30px;
+    line-height: 25px;
+}
+
+header h1 {
+    font-size: 24px;
+    font-weight: 300;
+}
+header h2 {
+    font-size: 24px;
+}
+header p {
+    font-size: 15px;
+    font-weight: 300;
+    color: #4D4F62
+}
+main h1 {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+main p {
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 23px;
+    margin-top: 8px;
+}
+div.supervisor {
+    border-top: 5px solid hsl(180, 62%, 55%);
+}
+div.teamBuilder {
+    border-top: 5px solid hsl(0, 78%, 62%);
+}
+div.karma {
+    border-top: 5px solid hsl(34, 97%, 64%);
+}
+div.calculator {
+    margin-bottom: 80px;
+    border-top: 5px solid hsl(212, 86%, 64%);
+}
+
+@media (min-width: 1440px) {
+    div.wrap {
+        margin-top: -5%;
+    }
+    body {
+        background-color: #FAFAFA;
+    }
+    div.introduction {
+        margin-bottom: 35px;
+    }
+    header h1 {
+        font-size: 36px;
+    }
+    header h2 {
+        font-size: 36px;
+    }
+    header p {
+        display: block;
+        width: 550px;
+        height: 50px;
+        margin-top: -15px;
+    }  
+
+
+    main div {
+        position: absolute;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+ 
+    article {
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        width: 1110px;
+        height: 544px;
+    }
+    div.supervisor {
+        left: 5%; 
+        top: 50%;
+        transform: translateY(-50%); 
+    }
+    div.teamBuilder {
+      top: 3%;
+      left: 50%;
+      transform: translateX(-50%); 
+    }
+    div.karma {
+       bottom: -12%;
+       left: 50%;
+       transform: translateX(-50%); 
+    }
+    div.calculator {
+       right: 5%; 
+       top: 50%;
+       transform: translateY(-50%);
+    }
+    .attribution {
+        margin-top: 3%;
+    }
+
+}
